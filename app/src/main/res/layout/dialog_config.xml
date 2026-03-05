@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择预设服务器地址："
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:id="@+id/spinnerPresets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="或输入自定义地址："
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/etServerUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ws://your-server.com/ws"
+        android:inputType="textUri"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* 支持ws://和wss://协议"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

@@ -44,6 +44,16 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.6.1'
 
+    // OkHttp for HTTP requests
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'com.squareup.okhttp3:okhttp-ws:4.11.0'
+
+    // Gson for JSON parsing
+    implementation 'com.google.code.gson:gson:2.10.1'
+
+    // WebSocket support
+    implementation 'org.java-websocket:Java-WebSocket:1.5.4'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
